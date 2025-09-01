@@ -39,6 +39,17 @@
 - [ ] Does this PR require integration testing?
 - [ ] Does this PR require regression testing?
 
+### Secure Coding (ISO 27001 A.8.28)
+
+- [ ] Input validation has been implemented to prevent injection attacks (SQLi, XSS, etc.)
+- [ ] Sensitive data is encrypted in transit and at rest (where applicable)
+- [ ] Authentication and authorization checks are enforced for all new endpoints
+- [ ] Secrets, API keys, or credentials are **not** hardcoded in code/config
+- [ ] Dependencies introduced/updated have been reviewed for vulnerabilities
+- [ ] Error handling avoids leaking sensitive information
+- [ ] Logging follows policy (no sensitive data logged)
+- [ ] Code changes have been reviewed for compliance with OWASP Top 10
+
 ### Deployment / Automation
 
 - [ ] Does this PR require any SQL scripts?
